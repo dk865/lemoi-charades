@@ -4322,7 +4322,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Arr,
 		C3.Plugins.Button.Cnds.OnClicked,
 		C3.Plugins.Text.Acts.TypewriterText,
-		C3.Plugins.System.Exps.choose
+		C3.Plugins.System.Exps.choose,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Button.Acts.SetCSSStyle
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4439,9 +4441,17 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0("Eating", "Drinking", "Flying", "Falling", "Watching a Show", "Reading", "Building a Sandcastle", "Doing Yoga", "Fighting", "Pooping", "Octopus", "Chicken", "Superman", "Cat");
+			return () => f0("Eating", "Drinking", "Flying", "Falling", "Watching a Show", "Reading", "Building a Sandcastle", "Doing Yoga", "Fighting", "Pooping", "Octopus", "Chicken", "Superman", "Cat", "Mouse", "Opening a Toilet", "Licking your Foot", "Leaving Footprints", "Slow Running", "Jogging", "Dog", "Lizzard", "Sea Beast", "The Number 7", "Potato", "Tomato", "Annoyingness", "Baby", "Old Man", "Bread", "Cake", "ICE CREAM!!!");
 		},
-		() => 0.5
+		() => 0.5,
+		() => "background",
+		() => "#39ADA9",
+		() => "border-radius",
+		() => "20px",
+		() => "border",
+		() => "none",
+		() => "color",
+		() => "white"
 ];
 
 
